@@ -36,7 +36,7 @@
                                     </p>
                                     <p style="text-align:center">
                                         <a href="mailto:johed950@student.liu.se">Email</a> &nbsp/&nbsp
-                                        <a href="https://github.com/parskatt">Email</a> &nbsp/&nbsp
+                                        <a href="https://github.com/parskatt">Github</a> &nbsp/&nbsp
                                         <a href="https://www.linkedin.com/in/johan-edstedt-a63804172/"> LinkedIn </a>
                                     </p>
                                 </td>
@@ -117,6 +117,7 @@
                         </tr>
                     </table>
                     <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+                        <!--Bachelor thesis-->
                         <tr onmouseout="bachelor_thesis_stop()" onmouseover="bachelor_thesis_start()">
                             <td style="padding:20px;width:25%;vertical-align:middle">
                               <div class="one">
@@ -142,6 +143,34 @@
                               <p>I worked on integrating the LIDAR and ultrasonic sensors into the system, as well as data collection for ML and dependency management.</p>
                             </td>
                           </tr>
+                          <tr onmouseout="MLP_stop()" onmouseover="MLP_start()">
+                                <td style="padding:20px;width:25%;vertical-align:middle">
+                                  <div class="one">
+                                    <div class="two" id='MLP_image'> <iframe width="100%" height="auto"
+                                        src="https://www.youtube.com/embed/w3E3kJGgT-w?fs=0&autoplay=1&controls=0">
+                                        </iframe> 
+                                    </div>
+                                    <img width="100%" height="auto" src='images/bachelor1.png'>
+                                  </div>
+                                  <script type="text/javascript">
+                                    function MLP_start() {
+                                      document.getElementById('MLP_image').style.opacity = "1";
+                                    }
+                    
+                                    function MLP_stop() {
+                                      document.getElementById('MLP_image').style.opacity = "0";
+                                    }
+                                    MLP_stop()
+                                  </script>
+                                </td>
+                                <td style="padding:20px;width:75%;vertical-align:middle">
+                                  <a href="projects/MLP_report_2.pdf">
+                                    <papertitle>Exploring Multi-Agent Learning - Opponent modelling & Deep reinforcement learning</papertitle>
+                                  </a>
+                                  <p>The project involved investigating agent behaviour in a Multi-Agent system. We were given a simulated environment and constructed Deep Learning RL-agents with different kinds of reward functions, and investigated their observed behaviour.</p>
+                                  <p>I mainly worked on the models, i.e. implementing the network architecture as well as the RL algorithm (A3C).</p>
+                                </td>
+                              </tr>
                     </table>
                 </td>
             </tr>
