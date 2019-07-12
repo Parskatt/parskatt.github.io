@@ -142,6 +142,7 @@
                               <p>I worked on integrating the LIDAR and ultrasonic sensors into the system, as well as data collection for ML and dependency management.</p>
                             </td>
                           </tr>
+                        <!--Machine learning project-->                          
                           <tr onmouseout="MLP_stop()" onmouseover="MLP_start()">
                                 <td style="padding:20px;width:25%;vertical-align:middle">
                                   <div class="one">
@@ -170,6 +171,7 @@
                                   <p>I mainly worked on the models, i.e. implementing the network architecture as well as the RL algorithm (A3C).</p>
                                 </td>
                               </tr>
+                            <!--Information retrieval-->
                             <tr onmouseout="IR_stop()" onmouseover="IR_start()">
                             <td style="padding:20px;width:25%;vertical-align:middle">
                                 <div class="one">
@@ -196,6 +198,32 @@
                                 <p>I was responsible for both the architecture and training of the model. We improved upon the results of the original paper, but we did not achieve state of the art performance.</p>
                             </td>
                             </tr>
+                            <!--Decision trees-->
+                            <tr onmouseout="IR_stop()" onmouseover="DT_start()">
+                                <td style="padding:20px;width:25%;vertical-align:middle">
+                                    <div class="one">
+                                    <div class="two" id='DT_image'> <img width="100%" height="auto" src='images/DT2.png'>
+                                    </div>
+                                    <img width="100%" height="auto" src='images/DT1.png'>
+                                    </div>
+                                    <script type="text/javascript">
+                                    function DT_start() {
+                                        document.getElementById('DT_image').style.opacity = "1";
+                                    }
+                    
+                                    function DT_stop() {
+                                        document.getElementById('DT_image').style.opacity = "0";
+                                    }
+                                    DT_stop()
+                                    </script>
+                                </td>
+                                <td style="padding:20px;width:75%;vertical-align:middle">
+                                    <a href="projects/BDA_Decision_Tree.pdf">
+                                    <papertitle>Efficient construction of random forests</papertitle>
+                                    </a>
+                                    <p>The goal was to build an unpruned random forest using gini impurity as split heuristic as efficiently as possible using C++. My implementation was about 3x faster than Numpy. </p>
+                                </td>
+                                </tr>
                     </table>
                 </td>
             </tr>
