@@ -149,7 +149,7 @@
                                         src="https://www.youtube.com/embed/w3E3kJGgT-w?fs=0&autoplay=1&controls=0&mute=1&loop=1">
                                         </iframe> 
                                     </div>
-                                    <img width="100%" height="auto" src='images/bachelor1.png'>
+                                    <img width="100%" height="auto" src='images/MLP1.png'>
                                   </div>
                                   <script type="text/javascript">
                                     function MLP_start() {
@@ -166,10 +166,36 @@
                                   <a href="projects/MLP_report_2.pdf">
                                     <papertitle>Exploring Multi-Agent Learning - Opponent modelling & Deep reinforcement learning</papertitle>
                                   </a>
-                                  <p>The project involved investigating agent behaviour in a Multi-Agent system. We were given a simulated environment and constructed Deep Learning RL-agents with different kinds of reward functions, and investigated their observed behaviour.</p>
+                                  <p>We investigated agent behaviour in a Multi-Agent system. We were given a simulated environment and constructed Deep Learning RL-agents with different kinds of reward functions, and investigated their observed behaviour.</p>
                                   <p>I mainly worked on the models, i.e. implementing the network architecture as well as the RL algorithm (A3C).</p>
                                 </td>
                               </tr>
+                            <tr onmouseout="IR_stop()" onmouseover="IR_start()">
+                            <td style="padding:20px;width:25%;vertical-align:middle">
+                                <div class="one">
+                                <div class="two" id='IR_image'> <img width="100%" height="auto" src='images/IR1.png'>
+                                </div>
+                                <img width="100%" height="auto" src='images/IR2.png'>
+                                </div>
+                                <script type="text/javascript">
+                                function IR_start() {
+                                    document.getElementById('IR_image').style.opacity = "1";
+                                }
+                
+                                function IR_stop() {
+                                    document.getElementById('IR_image').style.opacity = "0";
+                                }
+                                IR_stop()
+                                </script>
+                            </td>
+                            <td style="padding:20px;width:75%;vertical-align:middle">
+                                <a href="projects/IR_part2.pdf">
+                                <papertitle>Visual Question Answering</papertitle>
+                                </a>
+                                <p>The main purpose was to construct a multi-modal question answering system that could answer text based questions about a specified image.</p>
+                                <p>I was responsible for both the architecture and training of the model. We improved upon the results of the original paper, but we did not achieve state of the art performance.</p>
+                            </td>
+                            </tr>
                     </table>
                 </td>
             </tr>
