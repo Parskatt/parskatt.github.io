@@ -33,6 +33,8 @@
                                         I also recently finished an exchange year at <a
                                             href="https://www.kuleuven.be/english/">Katholieke Universiteit Leuven</a>
                                     where I focused on learning more about A.I. My main interests are in generative modelling and image processing.
+
+                                    I'm currently doing my Master Thesis, expected to be done by June 2020 + Working for <a href="https://fiarobotics.se">FIA Robotics</a>, implementing Computer Vision Solutions for the @home-cup 2020.
                                     </p>
                                     <p style="text-align:center">
                                         <a href="mailto:johed950@student.liu.se">Email</a> &nbsp/&nbsp
@@ -102,6 +104,35 @@
                         </tr>
                     </table>
                     <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+                        <!--CDIO Project-->
+                        <tr onmouseout="CDIO_stop()" onmouseover="CDIO_start()">
+                          <td style="padding:20px;width:25%;vertical-align:middle">
+                            <div class="one">
+                              <div class="two" id='CDIO_VID'> <iframe width="100%" height="100%"
+                                src="https://www.youtube.com/embed/c4fLkT2klwk?fs=0&autoplay=0&controls=0&mute=1&loop=1">
+                                </iframe> 
+                              </div>
+                              <img width="100%" height="100%" src='images/CDIO.jpg'>
+                            </div>
+                            <script type="text/javascript">
+                              function CDIO_start() {
+                                document.getElementById('CDIO_VID').style.opacity = "1";
+                              }
+              
+                              function CDIO_stop() {
+                                document.getElementById('CDIO_VID').style.opacity = "0";
+                              }
+                              CDIO_stop()
+                            </script>
+                          </td>
+                          <td style="padding:20px;width:75%;vertical-align:middle">
+                            <a href="projects/Kandidat.pdf">
+                              <papertitle>CDIO Project - Automated Analysis of Cells</papertitle>
+                            </a>
+                            <p>We worked together with TB researchers at LiU to develop new methods to analyze the interaction between Macrophages and Tuberculosis</p>
+                            <p>I worked on implementing the tracker, mainly working on semantic segmentation + fusing motion estimates. I was also partly responsible for data management, data collection, and version control. </p>
+                          </td>
+                        </tr>
                         <!--Bachelor thesis-->
                         <tr onmouseout="bachelor_thesis_stop()" onmouseover="bachelor_thesis_start()">
                             <td style="padding:20px;width:25%;vertical-align:middle">
@@ -133,7 +164,7 @@
                                 <td style="padding:20px;width:25%;vertical-align:middle">
                                   <div class="one">
                                     <div class="two" id='MLP_image'> <iframe width="100%" height="100%"
-                                        src="https://www.youtube.com/embed/w3E3kJGgT-w?fs=0&autoplay=1&controls=0&mute=1&loop=1">
+                                        src="https://www.youtube.com/embed/w3E3kJGgT-w?fs=0&autoplay=0&controls=0&mute=1&loop=1">
                                         </iframe> 
                                     </div>
                                     <img width="100%" height="100%" src='images/MLP1.png'>
@@ -207,7 +238,7 @@
                                     <a href="projects/BDA_Decision_Tree.pdf">
                                     <papertitle>Efficient construction of random forests</papertitle>
                                     </a>
-                                    <p>The goal was to build an unpruned random forest using gini impurity as split heuristic as efficiently as possible using C++. My implementation was about 3x faster than Numpy. </p>
+                                    <p>The goal was to build an unpruned random forest using gini impurity as split heuristic as efficiently as possible using C++. Implementation is approx. 3x faster than scikit-learn.</p>
                                 </td>
                                 </tr>
                     </table>
@@ -216,7 +247,7 @@
                           <td>
                           <br>
                           <p align="right"><font size="2">
-                            <a href="https://people.eecs.berkeley.edu/~barron/">Website template from this awesome guy.</a>
+                            <a href="https://people.eecs.berkeley.edu/~barron/">Website inspired from here.</a>
                             </font>
                           </p>
                           </td>
